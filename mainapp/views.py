@@ -4,7 +4,7 @@ from .models import Accommodation
 #from .models import ListOfCountries
 
 def main(request):
-    return render(render, 'mainapp/index.html')
+    return render(request, 'mainapp/index.html')
 
 
 def accommodations(request):
@@ -19,7 +19,7 @@ def accommodations(request):
 
     return render(request, 'mainapp/accommodations.html', content)
 
-def accommodations(request, pk):
+def accommodation(request, pk):
     title = 'продукты'
 
     content = {
